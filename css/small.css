@@ -1,0 +1,295 @@
+:root{
+    --background1: #f0efea;
+    --background2: #7692b4;
+    --primary: #a74344;
+    --secondary: white;
+}
+
+main{
+    background-color: var(--background1);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--primary);
+}
+
+p{
+    color: var(--secondary);
+}
+
+
+.header-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-grid img{
+    grid-area: logo;
+    /* width: 100%; */
+    /* crop off bottom and top equally */
+    height: auto;
+    max-height: 100%;
+    grid-row: 1/1;
+}
+.current_date{
+    color: var(--background2);
+    /* dont display */
+    display: none;
+}
+
+
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+.temple_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.temple_info img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    
+    grid-column: 1/3;
+    grid-row: 2/2;
+}
+.temple_info h2{
+    grid-column: 1/3;
+    grid-row: 1/1;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+.temple_info p{
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--primary); 
+}
+.temple_info p a{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.reservation_hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background2);
+}
+.reservation_hero p{
+    text-align: center;
+}
+.reservation_hero p a{
+    font-size: 1.5rem;
+    color: var(--secondary);
+    /* allighn center */
+    text-align: center;
+}
+
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.weather h2{
+    grid-column: 1/3;
+    grid-row: 1/1;
+    text-align: center;
+    color: var(--primary);
+}
+.weather .temp{
+    grid-column: 2/3;
+    grid-row: 2/2;
+    text-align: center;
+    color: var(--primary);
+}
+.weather .temp span{
+    font-size: xx-large;
+    
+    font-weight: bold;
+    color: var(--primary);
+}
+.weather .temp span.unit{
+    font-size: x-large;
+    color: var(--primary);
+    font-weight: bold;
+    
+}
+.weather img{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 100%;  
+}
+.weather figure {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    text-align: center;
+    font-size: x-large;
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: 100px;
+    
+}
+.speed, .chill{
+    grid-column: 1/2;
+    grid-row: 3/3;
+    text-align: center;
+    font-size: large;
+    color: var(--primary);
+    font-weight: bold;
+}
+.speed{
+   grid-column: 2/3;
+}
+
+
+.speed span, .chill span{
+    margin-left: 50px;
+    font-size: large;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+/* footer */
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background2);
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    color: var(--secondary);
+}
+.footer-grid p{
+    text-align: center;
+}
+.footer-grid h2{
+    text-align: center;
+}
+
+/* create form with color variables */
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background2);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+}
+form h2, form p, form label, form input, form button, form{
+    text-align: center;
+}
+
+
+/* well padded and colored button for .classes reception and .full_time_missionaries */
+.reception a, .full_time_missionaries a{
+    background-color: var(--primary);
+    padding: 5px;
+    color: var(--secondary);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.staystill{
+    grid-column: 1/2;
+}
+
+.weddingfix{
+    color: var(--primary);
+    margin-bottom: 100px;
+}
+
+.reception-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background1);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+   
+
+}
+
+.reception-grid h2{
+    text-align: center;
+    
+}
+.reception-grid p{
+    text-align: center;
+   
+    color: var(--primary);
+}
+.reception-grid img{
+    text-align: center;
+    
+}
+
+
+
+
+/* responsive Navigation */
+nav {
+    
+	background-color: var(--background2);
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+    margin: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation .ham{
+    text-align: right;
+}
+
+/* .navigation a.ham::before {
+    
+}
+
+.responsive a.ham::before {
+
+} */
+
+.navigation a:hover {
+	color: var(--primary);
+	background-color: var(--background1);
+}
+
+.responsive li {
+	display: block;
+}
+

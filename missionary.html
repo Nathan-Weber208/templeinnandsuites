@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Temple Inn and Suites Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for Temple Inn and Suites">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-grid">
+            <img src="images/logo.jpg" alt="logo">
+            <div class="current_date"><span id="currentdate1"></span></div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#"><span id="currentdate2"></span> &#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="missionary.html">Missionaries</a></li>
+            <li><a href="reception.html">Reception</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-grid">
+            <!-- provide informaton and images about
+                 the suites offered at the hotel with
+                  a simple contact us form for more 
+                  details -->
+            
+            <form action="" class="staystill">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <p>Call us at (208)504-8702</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            
+            <p>Contact us: (208)504-8702</p>
+            <p>&copy; <span id="currentyear"></span>| Nathan Weber | WWD 230 Project
+            </p>
+
+
+
+
+        </div>
+    </footer>
+
+    <script src="js/responsiveham.js"></script>
+    <script src="js/dates.js"></script>
+</body>
+
+
+
+
+</html>

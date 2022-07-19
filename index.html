@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Temple Inn and Suites Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for Temple Inn and Suites">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-grid">
+            <img src="images/logo.jpg" alt="logo">
+            <div class="current_date"><span id="currentdate1"></span></div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#"><span id="currentdate2"></span> &#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="missionary.html">Missionaries</a></li>
+            <li><a href="reception.html">Reception</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-grid">
+            <!-- summery information on a temple of your choosing -->
+            <div class="temple_info">
+                <h2>Rexburg, Idaho Temple</h2>
+                <img src="images/rexburg_idaho_temple.jpeg" alt="rexburg_idaho_temple">
+                <p>
+                    <a href="https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng">Rexburg Idaho
+                        Temple Appointments</a>
+                </p>
+                <p>
+                    <a href="temples.html">Click here to find a temple</a>
+                </p>
+            </div>
+            <!-- a call to action to make a hotel reservation -->
+            <div class="reservation_hero">
+                <p>
+                    <a href="reservations.html">Click here to make a reservation</a>
+                <br>
+                    <a href="missionary.html">Click here to contact us</a>
+                </p>
+            </div>
+
+
+
+            <!-- current weather card
+                current temp, discription and humidity
+            weather alerts if available closable message at top of page
+            3 day forcast -->
+            <div class="weather">
+                <h2>Weather</h2>
+                <p class="temp">Temp
+                    <br>
+                    <span id="current-temp"></span> &deg;F
+                </p>
+
+                <img id="weathericon" />
+
+                <figure>
+                    <figcaption></figcaption>
+                </figure>
+                <p class="speed">Wind Speed:
+                    <span id="Windspeed"></span>
+                </p>
+                <p class="chill">Windchill:
+                    <span id="Windchill"></span>
+                </p>
+
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <p>Contact us: (208)504-8702</p>
+            <p>&copy; <span id="currentyear"></span>| Nathan Weber | WWD 230 Project
+            </p>
+            <div class="social_media">
+                <h2>Social Media</h2>
+                <!-- facebook, instagram, and twitter links through logos -->
+                <p>
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebook_icon.png" alt="facebook logo">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram_icon.png" alt="instagram logo">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="images/twitter_icon.png" alt="twitter logo">
+                    </a>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+    <script src="js/responsiveham.js"></script>
+    <script src="js/dates.js"></script>
+    <script src="js/weather_windchill.js"></script>
+</body>
+
+
+
+
+</html>

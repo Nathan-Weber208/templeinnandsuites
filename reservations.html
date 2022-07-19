@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Temple Inn and Suites Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for Temple Inn and Suites">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-grid">
+            <img src="images/logo.jpg" alt="logo">
+            <div class="current_date"><span id="currentdate1"></span></div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#"><span id="currentdate2"></span> &#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="missionary.html">Missionaries</a></li>
+            <li><a href="reception.html">Reception</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form-grid">
+            <!-- normal stay reservation form -->
+            <!-- location,date,number,type of room -->
+            <!-- fullname,email,phone,homestate or country, comment or special accomidation -->
+            <!-- form validation -->
+            <!-- submit button -->
+            <form action="">
+                <h2>Make a reservation</h2>
+                <div class="form-grid">
+                    <div class="form-grid-item">
+                        <label for="location">Location</label>
+                        <select name="location" id="location">
+                            <option value="">Select a location</option>
+                            <option value="">Temple</option>
+                            <option value="">Hotel</option>
+                            <option value="">Resort</option>
+                        </select>
+                    </div>
+                    <div class="form-grid-item">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="form-grid-item">
+                        <label for="room">Room type</label>
+                        <select name="room" id="room">
+                            <option value="">Select a room</option>
+                            <option value="">Single</option>
+                            <option value="">Double</option>
+                            <option value="">Triple</option>
+                        </select>
+                    </div>
+                </div>
+                <h3>Personal Info:</h3>
+                <div class="form-grid">
+                    <div class="form-grid-item">
+                        <label for="fullname">Full name</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div class="form-grid-item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-grid-item">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="form-grid-item">
+                        <label for="homestate">Home state or country</label>
+                        <input type="text" name="homestate" id="homestate">
+                    </div>
+                    <!-- submit button -->
+                    <div class="form-grid-item">
+                        <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div> 
+    </main>
+    <footer>
+        <div class="footer-grid">
+           
+            <p>Contact us: (208)504-8702</p>
+            <p>&copy; <span id="currentyear"></span>| Nathan Weber | WWD 230 Project
+            </p>
+
+
+
+
+        </div>
+    </footer>
+ 
+    <script src="js/responsiveham.js"></script>
+    <script src="js/dates.js"></script>
+</body>
+
+
+
+
+</html>

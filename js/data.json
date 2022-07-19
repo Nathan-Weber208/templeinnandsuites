@@ -1,0 +1,36 @@
+{
+    "temples": [
+      {
+        "location": "Rexburg Idaho",
+        "address":"750 S 2nd E Rexburg, ID 83440-5404 United States",
+        "number":"(208)656-0880",
+        "website":"https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple?lang=eng",
+        "imageurl": "images/rexburg_idaho_temple.jpeg",
+        "dedicated": "10 February 2008"
+      },
+      {
+        "location": "Nauvoo Illinois",
+        "address":"50 N Wells St Nauvoo IL 62354 United States",
+        "number":"(505)822-5110",
+        "website":"https://www.churchofjesuschrist.org/temples/details/nauvoo-illinois-temple?lang=eng",
+        "imageurl": "images/nauvoo_temple_lds.jpg",
+        "dedicated": "27 June 2002"
+      },
+      {
+        "location": "Albuquerque New Mexico",
+        "address":"10301 San Francisco Rd NE Albuquerque NM 87122-3437 United States",
+        "number":"(217)453-6252",
+        "website":"https://www.churchofjesuschrist.org/temples/details/albuquerque-new-mexico-temple?lang=eng",
+        "imageurl": "images/albuquerque_new_mexico_temple.jpeg",
+        "dedicated": "5 March 2000"
+      },
+      {
+        "location": "Provo City Center Utah",
+        "address":"50 South University Ave Provo UT 84601 United States",
+        "number":"(801)343-2700",
+        "website":"https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng",
+        "imageurl": "images/provo_city_center_temple_exterior.jpg",
+        "dedicated": "20 March 2016"
+      }
+    ]
+  }
