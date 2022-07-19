@@ -31,4 +31,5 @@ let fulldate = dayname + ", " + monthname + " " + d.getDate() + ", " + year;
 
 document.getElementById("currentdate1").innerHTML = fulldate;
 document.getElementById("currentdate2").innerHTML = fulldate;
+
 document.getElementById("currentyear").innerHTML = year;
